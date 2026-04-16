@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-print-color-adjust: exact;
+}
+
+/* Pengaturan Presisi Cetak A4 */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    body {
+        background-color: white !important;
+        padding: 0 !important;
+    }
+    #print-area {
+        width: 210mm !important;
+        min-height: 297mm !important;
+        margin: 0 auto !important;
+        padding: 10mm !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    @page {
+        size: A4;
+        margin: 0;
+    }
+}
+
+/* Garis Tabel Tebal sesuai Standar Industri */
+.border-2-black {
+    border: 2pt solid black;
+}
+
+.border-b-2-black {
+    border-bottom: 2pt solid black;
+}
+
+.border-r-2-black {
+    border-right: 2pt solid black;
+}
+
+.dotted-line {
+    border-bottom: 1pt dotted black;
+}
